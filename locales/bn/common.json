@@ -1,0 +1,124 @@
+{
+  "app_name": "কৃষি সাথী",
+  "tagline": "আপনার চাষের সাথী",
+  "navigation": {
+    "home": "হোম",
+    "voice": "কণ্ঠ",
+    "pest_doctor": "পোকা ডাক্তার",
+    "analytics": "বিশ্লেষণ",
+    "profile": "প্রোফাইল"
+  },
+  "buttons": {
+    "start": "শুরু করুন",
+    "continue": "চালিয়ে যান",
+    "cancel": "বাতিল",
+    "save": "সংরক্ষণ",
+    "submit": "জমা দিন",
+    "close": "বন্ধ",
+    "retry": "পুনরায় চেষ্টা করুন",
+    "learn_more": "আরও জানুন"
+  },
+  "weather": {
+    "temperature": "তাপমাত্রা",
+    "humidity": "আর্দ্রতা",
+    "wind_speed": "বাতাসের গতি",
+    "rainfall": "বৃষ্টিপাত",
+    "forecast": "পূৰ্বানুমান",
+    "conditions": {
+      "sunny": "রৌদ্র",
+      "cloudy": "মেঘলা",
+      "rainy": "বৃষ্টি",
+      "stormy": "ঝড়"
+    }
+  },
+  "home": {
+    "pest_card_desc": "তাত্ক্ষণিক পোকা ও ফসল পরামর্শ পান।",
+    "mandi_card_desc": "ড্যাশবোর্ডে লাইভ দাম দেখুন।"
+  },
+  "market": {
+    "mandi_prices": "মণ্ডির দাম",
+    "commodity": "পণ্য",
+    "price_per_quintal": "দাম/কুইন্টাল",
+    "trend": "প্রবণতা",
+    "rising": "বাড়ছে",
+    "falling": "কমছে",
+    "stable": "স্থির",
+    "best_time_to_sell": "বিক্রয়ের সেরা সময়"
+  },
+  "crops": {
+    "cotton": "কার্পাস",
+    "paddy": "ধান",
+    "wheat": "গম",
+    "maize": "ভুট্টা",
+    "soybean": "সয়াবিন",
+    "chickpea": "ছোলা",
+    "sugarcane": "আখ",
+    "groundnut": "চিনাবাদাম"
+  },
+  "crop_stages": {
+    "sowing": "বপন",
+    "vegetative": "বৃদ্ধি",
+    "flowering": "ফুল",
+    "harvesting": "কাটা"
+  },
+  "problems": {
+    "pest": "পোকা",
+    "disease": "রোগ",
+    "weather": "আবহাওয়া",
+    "water": "পানি",
+    "nutrient": "পুষ্টি"
+  },
+  "financial": {
+    "rupee_symbol": "₹",
+    "potential_loss": "সম্ভাব্য ক্ষতি",
+    "treatment_cost": "চিকিৎসা খরচ",
+    "savings": "সঞ্চয়",
+    "profit": "লাভ",
+    "income": "আয়"
+  },
+  "time": {
+    "today": "আজ",
+    "tomorrow": "আগামীকাল",
+    "yesterday": "গতকাল",
+    "this_week": "এই সপ্তাহ",
+    "days_left": "দিন বাকি",
+    "hours": "ঘণ্টা",
+    "minutes": "মিনিট"
+  },
+  "units": {
+    "acres": "একর",
+    "hectares": "হেক্টর",
+    "quintals": "কুইন্টাল",
+    "kg": "কেজি",
+    "liters": "লিটার",
+    "celsius": "°C",
+    "mm": "মিমি"
+  },
+  "placeholders": {
+    "search": "খুঁজুন...",
+    "enter_mobile": "মোবাইল নম্বর লিখুন",
+    "type_message": "বার্তা টাইপ করুন..."
+  },
+  "weather_alert": {
+    "title": "কৃষি সাথী - আবহাওয়া সতর্কতা",
+    "stormy": "ঝড়ের সম্ভাবনা। ফসল এবং নিজেকে সুরক্ষিত রাখুন।",
+    "rainy": "বৃষ্টি ожидается। সেচ কমান, নিষ্কাশন পরীক্ষা করুন।",
+    "extreme_heat": "চরম গরম। জল এবং ছায়া নিশ্চিত করুন।",
+    "extreme_cold": "ঠান্ডা। সংবেদনশীল ফসল রক্ষা করুন।"
+  },
+  "messages": {
+    "loading": "লোড হচ্ছে...",
+    "saving": "সংরক্ষণ করা হচ্ছে...",
+    "success": "সফল!",
+    "error": "ত্রুটি",
+    "offline": "আপনি অফলাইনে আছেন",
+    "no_data": "ডেটা উপলব্ধ নেই",
+    "try_again": "আবার চেষ্টা করুন",
+    "language_changed": "ভাষা পরিবর্তন হয়েছে"
+  },
+  "language": {
+    "select": "ভাষা নির্বাচন করুন",
+    "search_placeholder": "ভাষা খুঁজুন..."
+  },
+  "farmer": "কৃষক"
+}

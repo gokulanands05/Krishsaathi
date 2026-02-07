@@ -1,0 +1,25 @@
+{
+  "title": "Dashboard",
+  "welcome": "Welcome, {name}",
+  "weather_card": {
+    "title": "Weather",
+    "current": "Current",
+    "next_24h": "Next 24 hours"
+  },
+  "mandi_card": {
+    "title": "Mandi Prices",
+    "see_all": "See all"
+  },
+  "advisory_card": {
+    "title": "Today's Advisory",
+    "no_advisory": "No advisory for today"
+  },
+  "quick_actions": {
+    "voice": "Ask by Voice",
+    "pest": "Pest ID",
+    "schemes": "Schemes"
+  },
+  "schemes_card": { "title": "Government Schemes" },
+  "soil_card": { "title": "Soil Health" },
+  "satellite_card": { "title": "Satellite / NDVI" }
+}

@@ -1,0 +1,236 @@
+/* KrishiNirnay AI - Main styles */
+:root {
+  --color-primary: #1b5e20;
+  --color-primary-light: #2e7d32;
+  --color-surface: #f5f5f5;
+  --color-card: #fff;
+  --color-text: #212121;
+  --color-text-muted: #757575;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-surface);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app-header__brand h1 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.app-header__tagline {
+  margin: 2px 0 0 0;
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.app-header__nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.app-header__nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.app-header__nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin: 0 0 12px 0;
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+.card-desc {
+  margin: 0 0 12px 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.page-title {
+  margin: 0 0 24px 0;
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-light);
+  box-shadow: 0 2px 8px rgba(27, 94, 32, 0.3);
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background: #323232;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.toast--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.toast--success {
+  background: #2e7d32;
+}
+
+/* Dashboard real-time blocks */
+.dashboard-loading,
+.dashboard-error {
+  color: var(--color-text-muted);
+}
+.dashboard-error {
+  color: #c62828;
+}
+.dashboard-source {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+.mandi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+.mandi-table th,
+.mandi-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+.mandi-table th {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.schemes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.schemes-list li {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.schemes-list li:last-child {
+  border-bottom: none;
+}
+.schemes-list a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.schemes-list a:hover {
+  text-decoration: underline;
+}
+.schemes-desc {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+.soil-tip {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* RTL layout support */
+[dir="rtl"] .app-header {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .app-header__nav {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .main {
+  text-align: right;
+}
+[dir="rtl"] .card h2,
+[dir="rtl"] .mandi-table th,
+[dir="rtl"] .mandi-table td {
+  text-align: right;
+}
+[dir="rtl"] .mandi-table {
+  direction: rtl;
+}
+[dir="rtl"] .schemes-list li,
+[dir="rtl"] .chatbot-input-wrap {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .language-toggle {
+  right: auto;
+  left: 24px;
+}
+@media (max-width: 767px) {
+  [dir="rtl"] .language-toggle {
+    left: 16px;
+    right: auto;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "greeting": "Hello {name}! Don't worry, I'm here to help. Just follow my instructions. What's the problem in your farming?",
+  "ask_crop": "Which crop are you growing?",
+  "ask_area": "In how many acres?",
+  "request_photo": "Okay, now show me a photo of your plant so I can see.",
+  "analyzing": "I'm looking at the photo... Please wait...",
+  "pest_identified": "✅ Problem identified! It is {pest_name}.",
+  "language_switched": "Language changed. I will now respond in the new language.",
+  "listening": "Listening...",
+  "speak_now": "Speak now"
+}

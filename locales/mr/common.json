@@ -1,0 +1,117 @@
+{
+  "app_name": "कृषि साथी",
+  "tagline": "तुमचा शेती साथी",
+  "navigation": {
+    "home": "होम",
+    "voice": "व्हॉईस",
+    "pest_doctor": "कीट डॉक्टर",
+    "analytics": "विश्लेषण",
+    "profile": "प्रोफाइल"
+  },
+  "buttons": {
+    "start": "सुरू करा",
+    "continue": "सुरू ठेवा",
+    "cancel": "रद्द",
+    "save": "जतन करा",
+    "submit": "सादर करा",
+    "close": "बंद",
+    "retry": "पुन्हा प्रयत्न करा",
+    "learn_more": "अधिक जाणून घ्या"
+  },
+  "weather": {
+    "temperature": "तापमान",
+    "humidity": "आर्द्रता",
+    "wind_speed": "वाऱ्याची गती",
+    "rainfall": "पाऊस",
+    "forecast": "अंदाज",
+    "conditions": {
+      "sunny": "सूर्य",
+      "cloudy": "ढग",
+      "rainy": "पाऊस",
+      "stormy": "वादळ"
+    }
+  },
+  "home": {
+    "pest_card_desc": "तात्काळ कीट आणि पीक सल्ला मिळवा.",
+    "mandi_card_desc": "डॅशबोर्डवर लाइव्ह भाव पहा."
+  },
+  "market": {
+    "mandi_prices": "मंडी भाव",
+    "commodity": "माल",
+    "price_per_quintal": "भाव/क्विंटल",
+    "trend": "कल",
+    "rising": "चढत आहे",
+    "falling": "उतरत आहे",
+    "stable": "स्थिर",
+    "best_time_to_sell": "विक्रीचा योग्य काळ"
+  },
+  "crops": {
+    "cotton": "कापूस",
+    "paddy": "भात",
+    "wheat": "गहू",
+    "maize": "मका",
+    "soybean": "सोयाबीन",
+    "chickpea": "हरभरा",
+    "sugarcane": "ऊस",
+    "groundnut": "शेंगा"
+  },
+  "crop_stages": {
+    "sowing": "पेरणी",
+    "vegetative": "वनस्पती",
+    "flowering": "फुलोरा",
+    "harvesting": "कापणी"
+  },
+  "problems": {
+    "pest": "कीटक",
+    "disease": "रोग",
+    "weather": "हवामान",
+    "water": "पाणी",
+    "nutrient": "पोषक"
+  },
+  "financial": {
+    "rupee_symbol": "₹",
+    "potential_loss": "संभाव्य तोटा",
+    "treatment_cost": "उपचार खर्च",
+    "savings": "बचत",
+    "profit": "नफा",
+    "income": "उत्पन्न"
+  },
+  "time": {
+    "today": "आज",
+    "tomorrow": "उद्या",
+    "yesterday": "काल",
+    "this_week": "या आठवड्यात",
+    "days_left": "दिवस शिल्लक",
+    "hours": "तास",
+    "minutes": "मिनिटे"
+  },
+  "units": {
+    "acres": "एकर",
+    "hectares": "हेक्टर",
+    "quintals": "क्विंटल",
+    "kg": "किलो",
+    "liters": "लिटर",
+    "celsius": "°C",
+    "mm": "मिमी"
+  },
+  "placeholders": {
+    "search": "शोधा...",
+    "enter_mobile": "मोबाइल नंबर प्रविष्ट करा",
+    "type_message": "संदेश टाइप करा..."
+  },
+  "messages": {
+    "loading": "लोड होत आहे...",
+    "saving": "जतन होत आहे...",
+    "success": "यश!",
+    "error": "त्रुटी",
+    "offline": "आपण ऑफलाइन आहात",
+    "no_data": "डेटा उपलब्ध नाही",
+    "try_again": "कृपया पुन्हा प्रयत्न करा",
+    "language_changed": "भाषा बदलली"
+  },
+  "language": {
+    "select": "भाषा निवडा",
+    "search_placeholder": "भाषा शोधा..."
+  },
+  "farmer": "शेतकरी"
+}

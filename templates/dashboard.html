@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title" data-i18n="title" data-i18n-module="dashboard">Dashboard</h1>
+<p id="dashboard-welcome">{{ t('welcome', 'dashboard', name=t('farmer', 'common')) }}</p>
+
+<div class="card">
+  <h2 data-i18n="weather_card.title" data-i18n-module="dashboard">Weather</h2>
+  <div id="dashboard-weather">
+    <p class="dashboard-loading">{{ t('messages.loading', 'common') }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2 data-i18n="mandi_card.title" data-i18n-module="dashboard">Mandi Prices</h2>
+  <div id="dashboard-mandi">
+    <p class="dashboard-loading">{{ t('messages.loading', 'common') }}</p>
+  </div>
+  <a href="#" class="btn btn--primary" data-i18n="mandi_card.see_all" data-i18n-module="dashboard">See all</a>
+</div>
+
+<div class="card">
+  <h2 data-i18n="advisory_card.title" data-i18n-module="dashboard">Today's Advisory</h2>
+  <div id="dashboard-advisory">
+    <p class="dashboard-loading">{{ t('messages.loading', 'common') }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2 data-i18n="schemes_card.title" data-i18n-module="dashboard">Government Schemes</h2>
+  <div id="dashboard-schemes">
+    <p class="dashboard-loading">{{ t('messages.loading', 'common') }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2 data-i18n="soil_card.title" data-i18n-module="dashboard">Soil Health</h2>
+  <div id="dashboard-soil">
+    <p class="dashboard-loading">{{ t('messages.loading', 'common') }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2 data-i18n="satellite_card.title" data-i18n-module="dashboard">Satellite / NDVI</h2>
+  <div id="dashboard-satellite">
+    <p class="dashboard-loading">{{ t('messages.loading', 'common') }}</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2 data-i18n="quick_actions.voice" data-i18n-module="dashboard">Quick actions</h2>
+  <button type="button" class="btn btn--primary" id="dashboard-voice-btn" data-i18n="navigation.voice" data-i18n-module="common">Voice</button>
+  <a href="{{ url_for('chatbot_page') }}" class="btn btn--primary" data-i18n="quick_actions.pest" data-i18n-module="dashboard">Pest ID</a>
+  <a href="#dashboard-schemes" class="btn btn--primary" data-i18n="quick_actions.schemes" data-i18n-module="dashboard">Schemes</a>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+<script>
+  (function() {
+    function updateWelcome() {
+      var el = document.getElementById('dashboard-welcome');
+      if (el && window.i18n) {
+        el.textContent = window.i18n.t('welcome', 'dashboard', { name: window.i18n.t('farmer', 'common') });
+      }
+    }
+    window.addEventListener('languageChanged', updateWelcome);
+    var voiceBtn = document.getElementById('dashboard-voice-btn');
+    if (voiceBtn && window.voiceHandler) {
+      voiceBtn.addEventListener('click', function() {
+        window.voiceHandler.start(
+          function(text) {
+            if (text && window.i18n) {
+              var msg = window.i18n.t('chatbot.listening', 'chatbot') || 'Heard: ';
+              alert(msg + ' ' + text);
+            }
+          },
+          function(err) {
+            if (window.i18n) alert(window.i18n.t('messages.error', 'common') + ': ' + (err.message || err));
+          }
+        );
+      });
+    }
+  })();
+</script>
+{% endblock %}

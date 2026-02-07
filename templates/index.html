@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title" data-i18n="app_name" data-i18n-module="common">KrishiSaathi</h1>
+<p data-i18n="tagline" data-i18n-module="common">Your Farming Companion</p>
+<div class="card">
+  <h2 data-i18n="navigation.pest_doctor" data-i18n-module="common">Pest Doctor</h2>
+  <p class="card-desc" data-i18n="home.pest_card_desc" data-i18n-module="common">Get instant pest and crop advice.</p>
+  <a href="{{ url_for('chatbot_page') }}" class="btn btn--primary" data-i18n="buttons.start" data-i18n-module="common">Start</a>
+</div>
+<div class="card">
+  <h2 data-i18n="market.mandi_prices" data-i18n-module="common">Mandi Prices</h2>
+  <p class="card-desc" data-i18n="home.mandi_card_desc" data-i18n-module="common">View live prices on the dashboard.</p>
+  <a href="{{ url_for('dashboard') }}" class="btn btn--primary" data-i18n="buttons.learn_more" data-i18n-module="common">Learn More</a>
+</div>
+{% endblock %}

@@ -1,0 +1,117 @@
+{
+  "app_name": "కృషి సాథి",
+  "tagline": "మీ వ్యవసాయ సహచరుడు",
+  "navigation": {
+    "home": "హోమ్",
+    "voice": "వాయిస్",
+    "pest_doctor": "చీడపీడ డాక్టర్",
+    "analytics": "విశ్లేషణ",
+    "profile": "ప్రొఫైల్"
+  },
+  "buttons": {
+    "start": "ప్రారంభించండి",
+    "continue": "కొనసాగించండి",
+    "cancel": "రద్దు",
+    "save": "సేవ్ చేయండి",
+    "submit": "సమర్పించండి",
+    "close": "మూసివేయండి",
+    "retry": "మళ్ళీ ప్రయత్నించండి",
+    "learn_more": "మరింత తెలుసుకోండి"
+  },
+  "weather": {
+    "temperature": "ఉష్ణోగ్రత",
+    "humidity": "ఆర్ద్రత",
+    "wind_speed": "గాలి వేగం",
+    "rainfall": "వర్షపాతం",
+    "forecast": "అంచనా",
+    "conditions": {
+      "sunny": "ఎండ",
+      "cloudy": "మేఘావృతం",
+      "rainy": "వర్షం",
+      "stormy": "గాలి"
+    }
+  },
+  "home": {
+    "pest_card_desc": "తక్షణం కీటక మరియు పంట సలహా పొందండి.",
+    "mandi_card_desc": "డాష్‌బోర్డ్‌లో లైవ్ ధరలు చూడండి."
+  },
+  "market": {
+    "mandi_prices": "మండి ధరలు",
+    "commodity": "వస్తువు",
+    "price_per_quintal": "ధర/క్వింటల్",
+    "trend": "ప్రవృత్తి",
+    "rising": "ఎదుగుతోంది",
+    "falling": "పడిపోతోంది",
+    "stable": "స్థిరం",
+    "best_time_to_sell": "అమ్మడానికి మంచి సమయం"
+  },
+  "crops": {
+    "cotton": "పత్తి",
+    "paddy": "వరి",
+    "wheat": "గోధుమ",
+    "maize": "మొక్కజొన్న",
+    "soybean": "సోయాబీన్",
+    "chickpea": "శెనగలు",
+    "sugarcane": "చెరకు",
+    "groundnut": "వేరుశెనగ"
+  },
+  "crop_stages": {
+    "sowing": "విత్తనం",
+    "vegetative": "వృక్ష",
+    "flowering": "పుష్పించడం",
+    "harvesting": "కోత"
+  },
+  "problems": {
+    "pest": "చీడపీడ",
+    "disease": "రోగం",
+    "weather": "వాతావరణం",
+    "water": "నీరు",
+    "nutrient": "పోషకం"
+  },
+  "financial": {
+    "rupee_symbol": "₹",
+    "potential_loss": "సంభావ్య నష్టం",
+    "treatment_cost": "చికిత్స ఖర్చు",
+    "savings": "పొదుపు",
+    "profit": "లాభం",
+    "income": "ఆదాయం"
+  },
+  "time": {
+    "today": "ఈ రోజు",
+    "tomorrow": "రేపు",
+    "yesterday": "నిన్న",
+    "this_week": "ఈ వారం",
+    "days_left": "రోజులు మిగిలినవి",
+    "hours": "గంటలు",
+    "minutes": "నిమిషాలు"
+  },
+  "units": {
+    "acres": "ఎకరాలు",
+    "hectares": "హెక్టార్లు",
+    "quintals": "క్వింటల్లు",
+    "kg": "కేజీ",
+    "liters": "లీటర్లు",
+    "celsius": "°C",
+    "mm": "మిమీ"
+  },
+  "placeholders": {
+    "search": "వెతకండి...",
+    "enter_mobile": "మొబైల్ నంబర్ నమోదు చేయండి",
+    "type_message": "సందేశం టైప్ చేయండి..."
+  },
+  "messages": {
+    "loading": "లోడ్ అవుతోంది...",
+    "saving": "సేవ్ చేస్తోంది...",
+    "success": "విజయం!",
+    "error": "దోషం",
+    "offline": "మీరు ఆఫ్‌లైన్‌లో ఉన్నారు",
+    "no_data": "డేటా అందుబాటులో లేదు",
+    "try_again": "మళ్ళీ ప్రయత్నించండి",
+    "language_changed": "భాష మార్చబడింది"
+  },
+  "language": {
+    "select": "భాష ఎంచుకోండి",
+    "search_placeholder": "భాషలు వెతకండి..."
+  },
+  "farmer": "రైతు"
+}

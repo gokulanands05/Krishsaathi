@@ -1,0 +1,25 @@
+{
+  "title": "डैशबोर्ड",
+  "welcome": "आपका स्वागत है, {name}",
+  "weather_card": {
+    "title": "मौसम",
+    "current": "वर्तमान",
+    "next_24h": "अगले 24 घंटे"
+  },
+  "mandi_card": {
+    "title": "मंडी भाव",
+    "see_all": "सभी देखें"
+  },
+  "advisory_card": {
+    "title": "आज का सलाह",
+    "no_advisory": "आज के लिए कोई सलाह नहीं"
+  },
+  "quick_actions": {
+    "voice": "आवाज से पूछें",
+    "pest": "कीट पहचान",
+    "schemes": "योजनाएं"
+  },
+  "schemes_card": { "title": "सरकारी योजनाएं" },
+  "soil_card": { "title": "मृदा स्वास्थ्य" },
+  "satellite_card": { "title": "उपग्रह / NDVI" }
+}

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title" data-i18n="navigation.pest_doctor" data-i18n-module="common">Pest Doctor</h1>
+<div class="card" id="chatbot-card">
+  <div id="chatbot-messages">
+    <p class="chatbot-bot" data-i18n="greeting" data-i18n-module="chatbot">Hello! How can I help with your crop?</p>
+  </div>
+  <div class="chatbot-input-wrap">
+    <input type="text" id="chatbot-input" data-i18n-placeholder="placeholders.type_message" placeholder="Type message..." />
+    <button type="button" class="btn btn--primary" id="chatbot-send" data-i18n="buttons.submit" data-i18n-module="common">Submit</button>
+  </div>
+</div>
+<style>
+  .chatbot-bot { margin: 0 0 8px 0; padding: 10px; background: #e8f5e9; border-radius: 8px; }
+  .chatbot-user { margin: 0 0 8px 0; padding: 10px; background: #e3f2fd; border-radius: 8px; text-align: right; }
+  .chatbot-input-wrap { display: flex; gap: 8px; margin-top: 16px; }
+  #chatbot-input { flex: 1; padding: 10px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 14px; }
+</style>
+{% endblock %}
+{% block scripts %}
+<script>
+  (function() {
+    var input = document.getElementById('chatbot-input');
+    var send = document.getElementById('chatbot-send');
+    var messages = document.getElementById('chatbot-messages');
+    if (!input || !send || !messages) return;
+    function addBotMessage(text) {
+      var p = document.createElement('p');
+      p.className = 'chatbot-bot';
+      p.textContent = text;
+      messages.appendChild(p);
+    }
+    window.chatbot = {
+      isOpen: true,
+      addBotMessage: addBotMessage
+    };
+    function showGreeting() {
+      if (!window.i18n) return;
+      var name = (window.currentUser && window.currentUser.name) || window.i18n.t('farmer', 'common');
+      var greeting = window.i18n.t('greeting', 'chatbot', { name: name });
+      addBotMessage(greeting);
+      if (window.voiceHandler && window.voiceHandler.speak) {
+        window.voiceHandler.speak(greeting, window.i18n.getCurrentLanguage());
+      }
+    }
+    var firstBot = messages.querySelector('.chatbot-bot');
+    if (firstBot && window.i18n) {
+      var name = (window.currentUser && window.currentUser.name) || window.i18n.t('farmer', 'common');
+      firstBot.textContent = window.i18n.t('greeting', 'chatbot', { name: name });
+    }
+    function addUserMessage(text) {
+      var p = document.createElement('p');
+      p.className = 'chatbot-user';
+      p.textContent = text;
+      messages.appendChild(p);
+    }
+    send.addEventListener('click', function() {
+      var text = (input.value || '').trim();
+      if (!text) return;
+      addUserMessage(text);
+      input.value = '';
+      sendChat(text);
+    });
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        var t = (input.value || '').trim();
+        if (!t) return;
+        addUserMessage(t);
+        input.value = '';
+        sendChat(t);
+      }
+    });
+    function sendChat(text) {
+      addBotMessage(window.i18n ? window.i18n.t('analyzing', 'chatbot') : 'Analyzing...');
+      var lang = (window.i18n && window.i18n.getCurrentLanguage()) ? window.i18n.getCurrentLanguage() : 'hi';
+      fetch('/api/chatbot/message', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept-Language': lang },
+        body: JSON.stringify({ message: text })
+      }).then(function(r) { return r.json(); }).then(function(data) {
+        var lastBot = messages.querySelectorAll('.chatbot-bot');
+        if (lastBot.length) lastBot[lastBot.length - 1].textContent = data.reply || '';
+      }).catch(function() {
+        var lastBot = messages.querySelectorAll('.chatbot-bot');
+        if (lastBot.length) lastBot[lastBot.length - 1].textContent = (window.i18n ? window.i18n.t('messages.error', 'common') : 'Error') + '. ' + (window.i18n ? window.i18n.t('messages.try_again', 'common') : 'Try again.');
+      });
+    }
+    window.addEventListener('languageChanged', function() {
+      if (window.i18n) {
+        addBotMessage(window.i18n.t('language_switched', 'chatbot'));
+      }
+    });
+  })();
+</script>
+{% endblock %}

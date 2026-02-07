@@ -1,0 +1,124 @@
+{
+  "app_name": "कृषि साथी",
+  "tagline": "आपका खेती साथी",
+  "navigation": {
+    "home": "होम",
+    "voice": "बोलें",
+    "pest_doctor": "कीट डॉक्टर",
+    "analytics": "विश्लेषण",
+    "profile": "प्रोफाइल"
+  },
+  "buttons": {
+    "start": "शुरू करें",
+    "continue": "जारी रखें",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "submit": "जमा करें",
+    "close": "बंद करें",
+    "retry": "पुनः प्रयास करें",
+    "learn_more": "और जानें"
+  },
+  "weather": {
+    "temperature": "तापमान",
+    "humidity": "आर्द्रता",
+    "wind_speed": "हवा की गति",
+    "rainfall": "वर्षा",
+    "forecast": "पूर्वानुमान",
+    "conditions": {
+      "sunny": "धूप",
+      "cloudy": "बादल",
+      "rainy": "बारिश",
+      "stormy": "तूफान"
+    }
+  },
+  "home": {
+    "pest_card_desc": "तुरंत कीट और फसल सलाह पाएं।",
+    "mandi_card_desc": "डैशबोर्ड पर लाइव भाव देखें।"
+  },
+  "market": {
+    "mandi_prices": "मंडी के भाव",
+    "commodity": "वस्तु",
+    "price_per_quintal": "भाव/क्विंटल",
+    "trend": "रुझान",
+    "rising": "बढ़ रहा",
+    "falling": "घट रहा",
+    "stable": "स्थिर",
+    "best_time_to_sell": "बेचने का सही समय"
+  },
+  "crops": {
+    "cotton": "कपास",
+    "paddy": "धान",
+    "wheat": "गेहूं",
+    "maize": "मक्का",
+    "soybean": "सोयाबीन",
+    "chickpea": "चना",
+    "sugarcane": "गन्ना",
+    "groundnut": "मूंगफली"
+  },
+  "crop_stages": {
+    "sowing": "बुवाई",
+    "vegetative": "वानस्पतिक",
+    "flowering": "फूल आना",
+    "harvesting": "कटाई"
+  },
+  "problems": {
+    "pest": "कीट",
+    "disease": "रोग",
+    "weather": "मौसम",
+    "water": "पानी",
+    "nutrient": "पोषक तत्व"
+  },
+  "financial": {
+    "rupee_symbol": "₹",
+    "potential_loss": "संभावित नुकसान",
+    "treatment_cost": "उपचार लागत",
+    "savings": "बचत",
+    "profit": "मुनाफा",
+    "income": "आय"
+  },
+  "time": {
+    "today": "आज",
+    "tomorrow": "कल",
+    "yesterday": "कल",
+    "this_week": "इस सप्ताह",
+    "days_left": "दिन बचे",
+    "hours": "घंटे",
+    "minutes": "मिनट"
+  },
+  "units": {
+    "acres": "एकड़",
+    "hectares": "हेक्टेयर",
+    "quintals": "क्विंटल",
+    "kg": "किलो",
+    "liters": "लीटर",
+    "celsius": "°C",
+    "mm": "मिमी"
+  },
+  "placeholders": {
+    "search": "खोजें...",
+    "enter_mobile": "मोबाइल नंबर दर्ज करें",
+    "type_message": "संदेश टाइप करें..."
+  },
+  "weather_alert": {
+    "title": "कृषि साथी - मौसम चेतावनी",
+    "stormy": "तूफान की संभावना। फसल और खुद को सुरक्षित रखें।",
+    "rainy": "बारिश की संभावना। सिंचाई कम करें, जल निकासी जांचें।",
+    "extreme_heat": "बहुत गर्मी। पानी और छाया का ध्यान रखें।",
+    "extreme_cold": "ठंड। नाजुक फसलों को बचाएं।"
+  },
+  "messages": {
+    "loading": "लोड हो रहा है...",
+    "saving": "सहेज रहा है...",
+    "success": "सफल!",
+    "error": "त्रुटि हुई",
+    "offline": "आप ऑफलाइन हैं",
+    "no_data": "डेटा उपलब्ध नहीं है",
+    "try_again": "कृपया पुनः प्रयास करें",
+    "language_changed": "भाषा बदल गई"
+  },
+  "language": {
+    "select": "भाषा चुनें",
+    "search_placeholder": "भाषा खोजें..."
+  },
+  "farmer": "किसान"
+}

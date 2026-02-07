@@ -1,0 +1,124 @@
+{
+  "app_name": "KrishiSaathi",
+  "tagline": "Your Farming Companion",
+  "navigation": {
+    "home": "Home",
+    "voice": "Voice",
+    "pest_doctor": "Pest Doctor",
+    "analytics": "Analytics",
+    "profile": "Profile"
+  },
+  "buttons": {
+    "start": "Start",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "close": "Close",
+    "retry": "Retry",
+    "learn_more": "Learn More"
+  },
+  "weather": {
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "wind_speed": "Wind Speed",
+    "rainfall": "Rainfall",
+    "forecast": "Forecast",
+    "conditions": {
+      "sunny": "Sunny",
+      "cloudy": "Cloudy",
+      "rainy": "Rainy",
+      "stormy": "Stormy"
+    }
+  },
+  "home": {
+    "pest_card_desc": "Get instant pest and crop advice.",
+    "mandi_card_desc": "View live prices on the dashboard."
+  },
+  "market": {
+    "mandi_prices": "Mandi Prices",
+    "commodity": "Commodity",
+    "price_per_quintal": "Price/Quintal",
+    "trend": "Trend",
+    "rising": "Rising",
+    "falling": "Falling",
+    "stable": "Stable",
+    "best_time_to_sell": "Best Time to Sell"
+  },
+  "crops": {
+    "cotton": "Cotton",
+    "paddy": "Paddy",
+    "wheat": "Wheat",
+    "maize": "Maize",
+    "soybean": "Soybean",
+    "chickpea": "Chickpea",
+    "sugarcane": "Sugarcane",
+    "groundnut": "Groundnut"
+  },
+  "crop_stages": {
+    "sowing": "Sowing",
+    "vegetative": "Vegetative",
+    "flowering": "Flowering",
+    "harvesting": "Harvesting"
+  },
+  "problems": {
+    "pest": "Pest",
+    "disease": "Disease",
+    "weather": "Weather",
+    "water": "Water",
+    "nutrient": "Nutrient"
+  },
+  "financial": {
+    "rupee_symbol": "₹",
+    "potential_loss": "Potential Loss",
+    "treatment_cost": "Treatment Cost",
+    "savings": "Savings",
+    "profit": "Profit",
+    "income": "Income"
+  },
+  "time": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "yesterday": "Yesterday",
+    "this_week": "This Week",
+    "days_left": "Days Left",
+    "hours": "Hours",
+    "minutes": "Minutes"
+  },
+  "units": {
+    "acres": "Acres",
+    "hectares": "Hectares",
+    "quintals": "Quintals",
+    "kg": "kg",
+    "liters": "Liters",
+    "celsius": "°C",
+    "mm": "mm"
+  },
+  "placeholders": {
+    "search": "Search...",
+    "enter_mobile": "Enter mobile number",
+    "type_message": "Type message..."
+  },
+  "weather_alert": {
+    "title": "KrishiSaathi - Weather Alert",
+    "stormy": "Storm likely. Keep crops and yourself safe.",
+    "rainy": "Rain expected. Reduce irrigation, check drainage.",
+    "extreme_heat": "Extreme heat. Ensure water and shade.",
+    "extreme_cold": "Cold conditions. Protect sensitive crops."
+  },
+  "messages": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "success": "Success!",
+    "error": "Error",
+    "offline": "You are offline",
+    "no_data": "No data available",
+    "try_again": "Please try again",
+    "language_changed": "Language changed"
+  },
+  "language": {
+    "select": "Select Language",
+    "search_placeholder": "Search languages..."
+  },
+  "farmer": "Farmer"
+}
